@@ -16,11 +16,12 @@ def visualize_MRI_slice(image, slice_index, slice_direction=2):
     
     s = image.shape
     if slice_direction==0:
-        a = plt.imshow(image[slice_index,:,:], cmap = 'gray', aspect=s[2]/float(s[1]))  
+        plot = plt.imshow(image[slice_index,:,:], cmap = 'gray', aspect=s[2]/float(s[1]))  
                                                           # aspect: to reshape the figure so that it's square
     elif slice_direction==1:
-        plt.imshow(image[:,slice_index,:], cmap = 'gray', aspect=s[2]/float(s[0]))
+        plot = plt.imshow(image[:,slice_index,:], cmap = 'gray', aspect=s[2]/float(s[0]))
     else:
-        plt.imshow(image[:,:,slice_index], cmap = 'gray')
+        plot = plt.imshow(image[:,:,slice_index], cmap = 'gray')
         
-    plt.show()
+    return plot
+    #plt.show()
