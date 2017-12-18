@@ -1,6 +1,3 @@
-# mri-super-resolution
-Project that aims at enhancing the quality of knee MRIs from the Osteoarthritis Initiative using super-resolution methods.
-
 # Super resolution methods applied to MRI
 
 This project aims at enhancing the quality of knee MRIs from the Osteoarthritis Initiative using super-resolution methods. The following methods were tested : 
